@@ -3,7 +3,8 @@ const express = require("express");
 const app = express();
 
 const options = {
-  DISCORD_WEBHOOK: process.env.DISCORD_WEBHOOK,
+  DISCORD_WEBHOOK_TOKEN: process.env.DISCORD_WEBHOOK_TOKEN,
+  DISCORD_WEBHOOK_ID: process.env.DISCORD_WEBHOOK_ID,
   GITHUB_TOKEN: process.env.GITHUB_TOKEN,
 };
 app.set("options", options);
