@@ -6,6 +6,7 @@ const options = {
   DISCORD_WEBHOOK_TOKEN: process.env.DISCORD_WEBHOOK_TOKEN,
   DISCORD_WEBHOOK_ID: process.env.DISCORD_WEBHOOK_ID,
   GITHUB_TOKEN: process.env.GITHUB_TOKEN,
+  GITHUB_USER_NAME: process.env.GITHUB_USER_NAME,
 };
 app.set("options", options);
 
