@@ -11,7 +11,7 @@ const getCommitCount = (from, to) => {
     method: "POST",
     data: {
       query: `query { 
-       user(login: "Duglaser") { 
+       user(login: "${app.get("options").GITHUB_USER_NAME}") { 
         contributionsCollection(from: "${from}", to: "${to}") {
           totalCommitContributions
         }
