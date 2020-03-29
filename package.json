@@ -12,5 +12,9 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:DuGlaser/cheer-up-sisters.git",
+  "author": "DuGlaser <duglaser0618@gmail.com>",
+  "license": "MIT"
 }
