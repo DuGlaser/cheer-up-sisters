@@ -2,8 +2,10 @@ const express = require("express");
 
 const app = express();
 
-const options = {};
-
+const options = {
+  DISCORD_WEBHOOK: process.env.DISCORD_WEBHOOK,
+  GITHUB_TOKEN: process.env.GITHUB_TOKEN,
+};
 app.set("options", options);
 
 app.set("port", process.env.PORT || 3000);
