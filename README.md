@@ -43,3 +43,16 @@ function createMessage(commitCount) {
 }
 ```
 メッセージの作成には[discord.js](https://discordjs.guide/)を使っています。
+
+## herokuへのデプロイ
+各種環境変数をherokuにセットする
+```
+heroku config:set DISCORD_WEBHOOK_ID=xxxxxxxxxxxxxxxxxx
+heroku config:set DISCORD_WEBHOOK_TOKEN=xxxxxxxxxxxxxxxxxxxxx
+heroku config:set GITHUB_TOKEN=xxxxxxxxxxxxxxxxxxxxx
+heroku config:set GITHUB_USER_NAME=xxxxxx
+heroku config:add TZ=Asia/Tokyo
+```
+
+起動にはherokuのadvance schedulerを使用しています。  
+[![Image from Gyazo](https://i.gyazo.com/72fc3de9f4d27b81d3dba4c339801d4d.png)](https://gyazo.com/72fc3de9f4d27b81d3dba4c339801d4d)
