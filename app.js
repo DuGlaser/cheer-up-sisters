@@ -8,6 +8,7 @@ const options = {
   GITHUB_TOKEN: process.env.GITHUB_TOKEN,
   GITHUB_USER_NAME: process.env.GITHUB_USER_NAME,
 };
+app.use(express.static("image"));
 app.set("options", options);
 
 app.set("port", process.env.PORT || 3000);
