@@ -11,7 +11,7 @@ function sendMessage(commitCount) {
   webhookClient.send(embed);
 }
 
-function createMessage(commitCount) {
+function daysMessage(commitCount) {
   // Customize this for you!
   switch (true) {
     case commitCount <= 3:
@@ -31,4 +31,6 @@ function createMessage(commitCount) {
   }
 }
 
-module.exports = { sendMessage };
+function weeklyMessage(commitCountArray) {}
+
+module.exports = { daysMessage, weeklyMessage };
